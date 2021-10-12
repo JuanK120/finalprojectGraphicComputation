@@ -3,7 +3,7 @@ INTEGRANTES
 Maria fernanda arroyo 1740443
 Juan camilo rosero  1746848
 Jose david erazo 1742505
-Cristian eduardo morales  17
+Cristian eduardo morales  1741731
 
 Descripciòn:
 Este proyecto, nos muestra la implementaciòn del archivo del cap final del libro base del curso, el cual decidimos modificar y adiccionar algunas funcionalidades practicas para concretar el objetivo planteado.

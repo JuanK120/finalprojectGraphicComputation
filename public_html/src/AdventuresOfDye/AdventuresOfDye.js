@@ -29,7 +29,7 @@ AdventuresOfDye.prototype.initialize = function () {
     );
     this.mCamera.setBackgroundColor([0.5, 0.5, 0.9, 1]);
 
-    this.mMsg = new FontRenderable("This is splash screen");
+    this.mMsg = new FontRenderable("This is the Start Menu");
     this.mMsg.setColor([1, 0, 0, 1]);
     this.mMsg.getXform().setPosition(10, 50);
     this.mMsg.setTextHeight(5);
@@ -42,11 +42,14 @@ AdventuresOfDye.prototype.draw = function () {
     gEngine.Core.clearCanvas([0.9, 0.9, 0.9, 1.0]); // clear to light gray
     
     this.mCamera.setupViewProjection();
-    this.mMsg.setText("This is splash Screen");
+    this.mMsg.setText("This is the Start Menu");
     this.mMsg.getXform().setPosition(10, 55);
     this.mMsg.draw(this.mCamera);
-    this.mMsg.setText("<Q> to Start");
+    this.mMsg.setText("Press <Q> to Enjoy the");
     this.mMsg.getXform().setPosition(10, 45);
+    this.mMsg.draw(this.mCamera);
+    this.mMsg.setText("GRATEST GAME EVER");
+    this.mMsg.getXform().setPosition(10, 35);
     this.mMsg.draw(this.mCamera);
 };
 

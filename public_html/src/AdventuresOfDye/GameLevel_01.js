@@ -204,6 +204,7 @@ GameLevel_01.prototype.initialize = function () {
     for (i = 0; i < p.length; i++) {
         this.mAllPlatforms.addToSet(p[i]);
     }
+
     /////////////////////////////////////////////////////////////////////////////////////////////////
     /////////////////////////////////////////////////////////////////////////////////////////////////
     //////////////////////////////       Doors and buttons         //////////////////////////////////
@@ -211,12 +212,10 @@ GameLevel_01.prototype.initialize = function () {
     /////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-    var d = parser.parseDoors(this.kDoorTop, this.kDoorBot, this.kDoorSleeve, this.mGlobalLightSet), aux = [];
+    var d = parser.parseDoors(this.kDoorTop, this.kDoorBot, this.kDoorSleeve, this.mGlobalLightSet);
     for (i = 0; i < d.length; i++) {
         this.mAllDoors.addToSet(d[i]);
-        aux.push(d);
     }
-    console.log('ass : \n ', aux)
 
     for (let i = 0; i < this.mAllDoors.size(); i++) {      
         if (this.mAllDoors.getObjectAt(i).getDoorType()== '0'){
@@ -228,8 +227,6 @@ GameLevel_01.prototype.initialize = function () {
         }
     }
 
-    console.log (`Doors : `)
-    console.log(this.type0doors, '\n', this.type1doors, '\n' ,this.type2doors)
 
 
     var b = parser.parseButtons(this.kButton, this.kButton1, this.kButton2, this.kButton3, this.mGlobalLightSet);
@@ -251,8 +248,6 @@ GameLevel_01.prototype.initialize = function () {
         }
     }
 
-    console.log (`buttons : `)
-    console.log(this.type0buttons, '\n', this.type1buttons, '\n' ,this.type2buttons, '\n', this.type3buttons)
     
 
 

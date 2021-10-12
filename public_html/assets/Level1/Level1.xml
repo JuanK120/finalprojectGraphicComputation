@@ -1,5 +1,5 @@
 <MyGameLevel>
-    <!-- Level 2 scene file -->
+    <!-- Level 1 scene file -->
 
     <!--  *** be careful!! comma (,) is not a supported syntax!!  -->
     <!--  make sure there are no comma in between attributes -->
@@ -26,6 +26,8 @@
               
               
     <!-- Platforms -->
+ 
+   
     <Platform PosX="0" PosY="0" Velocity="0 0 0" MovementRange="0" />
     <Platform PosX="10" PosY="0" Velocity="0 0 0" MovementRange="0" />
     <Platform PosX="20" PosY="0" Velocity="0 0 0" MovementRange="0" />
@@ -34,7 +36,6 @@
     <Platform PosX="50" PosY="0" Velocity="0 0 0" MovementRange="0" />
     <Platform PosX="60" PosY="0" Velocity="0 0 0" MovementRange="0" />
     
-
 
     <Platform PosX="27.3" PosY="5" Velocity="0 0 0" MovementRange="0" />
     <Platform PosX="38" PosY="10" Velocity="0 0 0" MovementRange="0" />
@@ -48,6 +49,7 @@
 
     
     <!-- Walls -->
+
     <Wall PosX="-4" PosY="2.5" />
     <Wall PosX="-4" PosY="7.5" />
     <Wall PosX="-4" PosY="12.5" />
@@ -97,11 +99,7 @@
 
     <Button PosX="2" PosY="12.5" Type="3"/>
     <Button PosX="27" PosY="14" Type="3"/>
-    <Button PosX="61" PosY="2" Type="3"/>
-    
-
-
-    
+    <Button PosX="61" PosY="2" Type="3"/>    
     
 
         
